@@ -53,9 +53,15 @@ layout: default
             {%- include latest_posts.html %}
           {%- endif %}
 
+          <!-- Selected manuscripts -->
+          {% if page.selected_manuscripts -%}
+            <h2>manuscript(s)</h2>
+            {%- include selected_manuscripts.html %}
+          {%- endif %}
+
           <!-- Selected papers -->
           {% if page.selected_papers -%}
-            <h2><a href="{{ '/publications/' | relative_url }}" style="color: inherit;">publications</a></h2>
+            <h2>publications</h2>
             {%- include selected_papers.html %}
           {%- endif %}
 

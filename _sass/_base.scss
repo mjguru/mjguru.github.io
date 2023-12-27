@@ -697,15 +697,6 @@ footer.sticky-bottom {
       }
 
       .author {
-        a {
-          border-bottom: 1px dashed var(--global-theme-color);
-
-          &:hover {
-            border-bottom-style: solid;
-            text-decoration: none;
-          }
-        }
-
         >em {
           border-bottom: 1px solid;
           font-style: normal;
