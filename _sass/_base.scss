@@ -626,7 +626,6 @@ footer.sticky-bottom {
 // Publications
 
 .publications {
-  margin-top: 2rem;
 
   h1 {
     color: var(--global-theme-color);
@@ -729,6 +728,11 @@ footer.sticky-bottom {
             border-color: var(--global-theme-color);
           }
         }
+
+        a {
+          color: #{$green-color-dark};
+          padding-right:1em;
+        }
       }
 
       .badges {
@@ -828,6 +832,7 @@ html.transition *:after {
 
 // Extra Markdown style (post Customization)
 .post {
+  padding-bottom: 1rem;
   .post-meta {
     color: var(--global-text-color-light);
     font-size: 0.875rem;

@@ -53,18 +53,6 @@ layout: default
             {%- include latest_posts.html %}
           {%- endif %}
 
-          <!-- Selected manuscripts -->
-          {% if page.selected_manuscripts -%}
-            <h2>manuscript(s)</h2>
-            {%- include selected_manuscripts.html %}
-          {%- endif %}
-
-          <!-- Selected papers -->
-          {% if page.selected_papers -%}
-            <h2>publications</h2>
-            {%- include selected_papers.html %}
-          {%- endif %}
-
           <!-- Social -->
             <div class="social">
             {%- if page.social %}
@@ -79,5 +67,31 @@ layout: default
             {%- endif %}
             </div>
         </article>
+
+      {% if page.selected_manuscripts -%}
+        <div class="post">
+          <header class="post-header">
+            <!-- Selected manuscripts -->
+              <h2>Manuscript(s)</h2>
+          </header>
+          <article>
+            {%- include selected_manuscripts.html %}
+          </article>
+        </div>
+      {%- endif %}
+
+      {% if page.selected_papers -%}
+        <div class="post">
+          <header class="post-header">
+            <!-- Selected manuscripts -->
+              <h2>Publications</h2>
+          </header>
+          <article>
+            {%- include selected_papers.html %}
+          </article>
+        </div>
+      {%- endif %}
+
+
 
 </div>
