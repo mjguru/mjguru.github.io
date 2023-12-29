@@ -83,7 +83,7 @@ layout: default
       {% if page.selected_papers -%}
         <div class="post">
           <header class="post-header">
-            <!-- Selected manuscripts -->
+            <!-- Selected publicatoins -->
               <h2>Publications</h2>
           </header>
           <article>
@@ -92,6 +92,15 @@ layout: default
         </div>
       {%- endif %}
 
+        <div class="post">
+          <header class="post-header">
+              <h2>Teaching</h2>
+          </header>
+          <article>
+            {% capture m %}{% include teaching.md %}{% endcapture %}
+            {{ m | markdownify }}
+          </article>
+        </div>
 
 
 </div>
