@@ -22,4 +22,4 @@ Hi! I am a third year PhD student in the Computer Science department at Cornell 
 
 I am primarily interested in theoretical computer science, specifically computational complexity and pseudorandomness. 
 
-My email is <a href="mailto:mgurumuk@cs.cornell.edu">mgurumuk@cs.cornell.edu</a>.
+My email is <a href="mailto:mgurumuk@cs.cornell.edu">mgurumuk@cs.cornell.edu</a>. Here is my <a href = "/assets/pdf/CV.pdf">CV</a>.
