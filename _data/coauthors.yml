@@ -13,3 +13,23 @@
 "Künnemann": 
   - firstname: ["Marvin"]
     url: https://people.mpi-inf.mpg.de/~marvin/
+
+"Paturi": 
+  - firstname: ["Ramamohan"]
+    url: https://cseweb.ucsd.edu/~paturi/
+
+"Pudlák": 
+  - firstname: ["Pavel"]
+    url: https://users.math.cas.cz/~pudlak/
+
+"Saks": 
+  - firstname: ["Michael"]
+    url: https://sites.math.rutgers.edu/~saks/ 
+
+"Talebanfard": 
+  - firstname: ["Navid"]
+    url: https://staffwww.dcs.shef.ac.uk/people/n.talebanfard/
+
+"Ringach": 
+  - firstname: ["Noam"]
+    url: https://scholar.google.com/citations?user=d0ZdmGUAAAAJ
