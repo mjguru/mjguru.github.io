@@ -150,6 +150,9 @@
           {%- if entry.html %}
             <a href="{{ entry.html }}" target = "_blank">Paper</a>
           {%- endif %}
+          {%- if entry.talk %}
+            <a href="{{ entry.talk }}" target = "_blank">Talk</a>
+          {%- endif %}
           {%- if entry.pdf %}
             {% if entry.pdf contains '://' -%}
             <a href="{{ entry.pdf }}" target = "_blank">Paper</a>
