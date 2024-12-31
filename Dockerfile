@@ -8,6 +8,8 @@ RUN apt-get update -y && apt-get install -y --no-install-recommends \
     imagemagick \
     ruby-full \
     build-essential \
+    libv8-dev \
+    libicu-dev \
     zlib1g-dev \
     jupyter-nbconvert \
     inotify-tools procps && \
