@@ -6,7 +6,7 @@ subtitle: (he/him/his)
 
 profile:
   align: right
-  image: Mohit_picture_2023.jpg
+  image: Mohit_picture_2025.jpg
   image_circular: false # crops the image to make it circular
   more_info: >
 
