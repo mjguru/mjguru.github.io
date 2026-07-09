@@ -32,7 +32,6 @@ for filename in [
     "style.css",
     "publications.html",
     "photo-large.jpg",
-    "headshot.jpeg",
 ]:
     src = ROOT / filename
     if src.exists():
