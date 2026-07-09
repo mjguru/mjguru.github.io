@@ -32,19 +32,7 @@ jobs:
         run: python3 build_publications.py
 
       - name: Prepare site folder
-        run: |
-          mkdir _site
-
-          cp index.html _site/
-          cp style.css _site/
-          cp publications.html _site/
-
-          # Images
-          [ -f photo-large.jpg ] && cp photo-large.jpg _site/
-          [ -f headshot.jpeg ] && cp headshot.jpeg _site/
-
-          # CV and paper/poster PDFs
-          cp *.pdf _site/
+        run: python3 build_site.py
 
       - name: Configure GitHub Pages
         uses: actions/configure-pages@v6
