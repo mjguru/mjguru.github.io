@@ -109,25 +109,6 @@ a:hover {
   margin: 8px 0;
 }
 
-@media (max-width: 640px) {
-  .page {
-    padding-top: 28px;
-  }
-
-  .hero {
-    flex-direction: column-reverse;
-    gap: 20px;
-  }
-
-  .profile-photo {
-    width: 140px;
-    height: 140px;
-  }
-
-  nav {
-    gap: 10px 14px;
-  }
-}
 
 
 
