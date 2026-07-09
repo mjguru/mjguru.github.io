@@ -11,3 +11,4 @@ venv/
 
 # Local server/log/temp files
 *.log
+_site/
