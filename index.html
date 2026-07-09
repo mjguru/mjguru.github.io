@@ -1,0 +1,86 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Mohit Gurumukhani</title>
+  <meta name="description" content="Academic website of Your Name">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <body>
+  <nav class="floating-nav" aria-label="Main navigation">
+    <a href="#">Home</a>
+    <a href="#about">About</a>
+    <a href="#publications">Publications</a>
+    <a href="#teaching">Teaching</a>
+    <!-- <a href="cv.pdf">CV</a> -->
+  </nav>
+
+  <!-- <main id="home" class="page"> -->
+
+  <main class="page">
+    <header class="hero">
+      <img class="profile-photo" src="photo-large.jpg" alt="Photo of Your Name">
+      <div class="intro">
+        <h1>Mohit Gurumukhani</h1>
+        <p class="subtitle">(he/him/his)</p>
+
+        <p>
+          PhD Student, Cornell University<br>
+          Email: <a href="mgurumuk@cs.cornell.edu">mgurumuk@cs.cornell.edu</a><br>
+          <!-- Office: Building, Room Number<br> -->
+          Links:
+          <a href="https://scholar.google.com/citations?hl=en&user=Wy3qqusAAAAJ">google scholar</a> |
+          <a href="https://dblp.org/pid/306/8152.html">dblp</a> 
+        </p>
+
+        <p class="job-market-note">
+        I will be on the postdoc job market for positions starting in Fall 2027
+        </p>
+      </div>
+    </header>
+
+    <section id="about">
+      <h2>About</h2>
+      <p>
+        I am a final year PhD student in the Computer Science department at Cornell University studying theoretical computer science.
+        My research interests include complexity theory, pseudorandomness, and analysis of boolean functions. 
+        I am fortunate to be advised by <a href = "https://www.cs.cornell.edu/~eshan/">Eshan Chattopadhyay</a>. Previously, I was an undergrad at UC San Diego where I had the great pleasure to work with <a href = "https://cseweb.ucsd.edu/~russell/">Russell Impagliazzo</a> and <a href = "https://cseweb.ucsd.edu/~paturi/">Ramamohan Paturi</a>.
+      </p>
+
+    
+    </section>
+
+    <section id="publications">
+      <h2>Publications</h2>
+      <div id="publications-list"></div>
+    </section>
+
+    <script>
+      fetch("publications.html")
+        .then(response => response.text())
+        .then(html => {
+          document.getElementById("publications-list").innerHTML = html;
+        });
+    </script>
+
+    <section id="teaching">
+      <h2>Teaching</h2>
+
+      <ul class="teaching-list">
+        <li>Theory of Computing, TA, Cornell, Fall 2023 and Spring 2026</li>
+        <li>Introduction to Analysis of Algorithms, TA, Cornell, Fall 2022, Spring 2023, and Spring 2024</li>
+        <li>Foundations of Responsible Machine Learning, TA, Cornell, Fall 2024</li>
+        <li>Data Structures and Functional Programming, TA, Cornell, Fall 2025</li>
+        <li>Discrete Math for CS, TA, UC San Diego, Winter 2021</li>
+        <li>Design and Analysis of Algorithms, TA, UC San Diego, Spring 2020</li>
+        <li>Mathematics for Algorithms and Systems Analysis, TA, UC San Diego, Fall 2019</li>
+        <li>Theory of Computation, TA, UC San Diego, Winter 2019</li>
+        <li>Computer Organization and Assembly, TA, UC San Diego, Spring 2018</li>
+      </ul>
+    </section>
+  </main>
+</body>
+</html>
