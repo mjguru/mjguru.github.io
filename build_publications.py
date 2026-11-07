@@ -365,7 +365,7 @@ def main() -> None:
 
     # Reverse chronological order. For entries with no year, use .bib order.
     indexed = list(enumerate(entries))
-    indexed.sort(key=lambda x: (-year_of(x[1]), x[0]))
+    # indexed.sort(key=lambda x: (-year_of(x[1]), x[0]))
     entries = [e for _, e in indexed]
 
     body = "\n\n".join(render_entry(e, coauthor_urls) for e in entries)
